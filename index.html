@@ -17,7 +17,7 @@
 		<thead>
 			<tr> <!-- This table needs more content. -->
 				<th>Tag or Attribute</th>
-				<th>Description</th> <!-- Consider naming this column something else. -->
+				<th>Usage Notes</th> 
 			</tr>
 		</thead>
 		<tbody>
@@ -35,15 +35,23 @@
 			</tr>
 			<tr>
 				<td class="code">id</td>
-				<td>Specifies the id of an <span class="code">&lt;input&gt;</span> element. The key in the key-value pair that stores the collected information.</td>
+				<td>Specifies the id of an <span class="code">&lt;input&gt;</span> element. Useful for linking parts of the form together, such as an input field and its label.</td>
 			</tr>
 			<tr>
 				<td class="code">&lt;label&gt;</td>
-				<td>Provides a label for an input field. Takes a <span class="code">for</span> attribute.</td>
+				<td>Displays a label for an input field to the user. Takes a <span class="code">for</span> attribute.</td>
 			</tr>
 			<tr>
 				<td class="code">for</td>
 				<td>An attribute of the <span class="code">&lt;label&gt;</span> element, should match the <span class="code">id</span> of the corresponding <span class="code">&lt;input&gt;</span> element to link them together.</td>
+			</tr>
+			<tr>
+				<td class="code">name</td>
+				<td>Required of <span class="code">&lt;input&gt;</span> elements in order to store information. The key in the key-value pair that contains the input.</td>
+			</tr>
+			<tr>
+				<td class="code">value</td>
+				<td>Can be used to specify default value for an <span class="code">&lt;input&gt;</span>. Also specified in <span class="code">&lt;option&gt;</span> tags to provide the contents of dropdowns and datalists.</td>
 			</tr>
 			<tr>
 				<td class="code">&lt;select&gt;</td>
@@ -51,11 +59,43 @@
 			</tr>
 			<tr>
 				<td class="code">&lt;datalist&gt;</td>
-				<td>Creates a dropdown with pre-defined suggestions but does not contstrain input to the defined options.</td>
+				<td>Creates a dropdown with pre-defined suggestions. Its <span class="code">id</span> attribute matches <span class="code">list</span> attribute of the input element.</td>
 			</tr>
 			<tr>
 				<td class="code">&lt;option&gt;</td>
-				<td>Used with Select and Datalist; defines an option in the dropdown. Takes a value attribute.</td>
+				<td>Used with <span class="code">select</span> and <span class="code">datalist</span>; defines an option in the dropdown. Takes a value attribute.</td>
+			</tr>
+			<tr>
+				<td class="code">&lt;textarea&gt;</td>
+				<td>Creates multiline input area. Size specified with <span class="code">rows</span> and <span class="code">cols</span> attributes.</td>
+			</tr>
+			<tr>
+				<td class="code">maxlength</td>
+				<td>Specifies maximum number of characers in a text field.</td>
+			</tr>
+			<tr>
+				<td class="code">max</td>
+				<td>Gives the maximum value acceptable in a number or range input.</td>
+			</tr>
+			<tr>
+				<td class="code">min</td>
+				<td>Gives the minimum value acceptable in a number or range input.</td>
+			</tr>
+			<tr>
+				<td class="code">step</td>
+				<td>Defines the interval for a number or range input.</td>
+			</tr>
+			<tr>
+				<td class="code">required</td>
+				<td>Attribute for input fields that must be filled out before submitting the form.</td>
+			</tr>
+			<tr>
+				<td class="code">pattern</td>
+				<td>Supplies a regular expression to check input against to validate user input.</td>
+			</tr>
+			<tr>
+				<td class="code">placeholder</td>
+				<td>This attribute is useful for providing an example to the user of how to format their input.</td>
 			</tr>
 		</tbody>
 	</table> 
@@ -65,7 +105,7 @@
 		<thead>
 			<tr>
 				<th>Tag</th>
-				<th>Description</th>
+				<th>Usage Notes</th>
 			</tr>
 		</thead>
 		<tbody>
@@ -110,7 +150,7 @@
 			<tr>
 				<th>Selector</th>
 				<th>Example</th>
-				<th>Description</th>
+				<th>Usage Notes</th>
 			</tr>
 		</thead>
 		<tbody>
