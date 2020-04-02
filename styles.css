@@ -2,8 +2,25 @@
 1. Document at least one HTML or CSS topic. 
 2. Display it in tables. 
 *3. Use a custom color scheme. 
-*4. Use custom styles for code snippet-type things.*/
+*4. Use custom styles for code snippet-type things with monospace font and background color.*/
+
+body {
+	font-family: Verdana;
+	text-align: center;
+	display: block;
+}
 
 h1 {
-	font-family: Georgia;
+	color: purple;
+}
+
+/*Currently, the text is all center-aligned, so the text in the "Description" column is as well; change that when styling.*/ 
+table {
+	margin: 0 auto;
+}
+
+.code {
+	font-family: "Courier New";
+	color: aqua;
+	background-color: black;
 }

@@ -2,7 +2,7 @@
 *1. Document at least one HTML or CSS topic. 
 *2. Display it in tables. 
 3. Use a custom color scheme. 
-4. Use custom styles for code snippet-type things.  -->
+4. Use custom styles for code snippet-type things, with a monospace font and background color.  -->
 
 <!DOCTYPE html>
 <html>
@@ -11,12 +11,136 @@
 	<title>HTML & CSS Reference</title>
 </head>
 <body>
-	<h1>Knowledge Base for HTML & CSS</h1>
+	<h1>HTML & CSS Quick Guide</h1>
 	<h2>Forms and Validation</h2>
-	<!-- table goes here --> 
+	<table>
+		<thead>
+			<tr> <!-- This table needs more content. -->
+				<th>Tag or Attribute</th>
+				<th>Description</th> <!-- Consider naming this column something else. -->
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td class="code">&lt;form&gt;</td> <!-- The trick with the code snippet in the table is using &lt; and &gt;. -->
+				<td>Defines the form, which is used to collect user input.</td>
+			</tr>
+			<tr>
+				<td class="code">&lt;input&gt;</td>
+				<td>The field where users enter information; takes type and id attributes.</td>
+			</tr>
+			<tr>
+				<td class="code">type</td>
+				<td>Specifies what kind of input field to display, such as text, radio, checkbox, and so on.</td>
+			</tr>
+			<tr>
+				<td class="code">id</td>
+				<td>Specifies the id of an <span class="code">&lt;input&gt;</span> element. The key in the key-value pair that stores the collected information.</td>
+			</tr>
+			<tr>
+				<td class="code">&lt;label&gt;</td>
+				<td>Provides a label for an input field. Takes a <span class="code">for</span> attribute.</td>
+			</tr>
+			<tr>
+				<td class="code">for</td>
+				<td>An attribute of the <span class="code">&lt;label&gt;</span> element, should match the <span class="code">id</span> of the corresponding <span class="code">&lt;input&gt;</span> element to link them together.</td>
+			</tr>
+			<tr>
+				<td class="code">&lt;select&gt;</td>
+				<td>Defines a dropdown list, contains options.</td>
+			</tr>
+			<tr>
+				<td class="code">&lt;datalist&gt;</td>
+				<td>Creates a dropdown with pre-defined suggestions but does not contstrain input to the defined options.</td>
+			</tr>
+			<tr>
+				<td class="code">&lt;option&gt;</td>
+				<td>Used with Select and Datalist; defines an option in the dropdown. Takes a value attribute.</td>
+			</tr>
+		</tbody>
+	</table> 
 
-	<h2>Semantic HTML</h2>
-	<!-- second table goes here -->
+	<h2>Semantic HTML</h2> 
+	<table>
+		<thead>
+			<tr>
+				<th>Tag</th>
+				<th>Description</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td class="code">&lt;header&gt;</td>
+				<td>Contains introductory information. Can be used at page level, or within sections and articles.</td>
+			</tr>
+			<tr>
+				<td class="code">&lt;nav&gt;</td>
+				<td>This tag wraps the set of navigation links on a page.</td>
+			</tr>
+			<tr>
+				<td class="code">&lt;section&gt;</td>
+				<td>Defines a section within a page, generally grouping related content together. May contain <span class="code">&lt;article&gt;</span> elements, or may be embedded within an article.</td>
+			</tr>
+			<tr>
+				<td class="code">&lt;article&gt;</td>
+				<td>Contains self-contained information or content, such as a news article or blog post. May contain <span class="code">&lt;section&gt;</span> elements, or be included in a section.</td>
+			</tr>
+			<tr>
+				<td class="code">&lt;aside&gt;</td>
+				<td>Contains information or content related to surrounding page content, like a sidebar or extra hints or tips.</td>
+			</tr>
+			<tr>
+				<td class="code">&lt;figure&gt;</td>
+				<td>Wraps image content and accomanying caption. Uses an <span class="code">&lt;img&gt;</span> tag to define image.</td>
+			</tr>
+			<tr>
+				<td class="code">&lt;figcaption&gt;</td>
+				<td>Defines caption for figures and images. Usually included within <span class="code">&lt;figure&gt;</span> tag to keep the caption associated with the corresponding image, graphic, or figure.</td>
+			</tr>
+			<tr>
+				<td class="code">&lt;footer&gt;</td>
+				<td>The section at the foot of the page, containing things like contact information, copyright, sitemap links, site policy links, and so on.</td>
+			</tr>
+		</tbody>
+	</table>
+
+	<h2>CSS Selectors</h2>
+	<table>
+		<thead>
+			<tr>
+				<th>Selector</th>
+				<th>Example</th>
+				<th>Description</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>Element</td>
+				<td class="code">p</td>
+				<td>Selects an HTML element, such as a paragraph. Any HTML element can be selected by its tag.</td>
+			</tr>
+			<tr>
+				<td>ID</td>
+				<td class="code">#id</td>
+				<td>Selects by unique id attribute. Used to select one specific element.</td>
+			</tr>
+			<tr>
+				<td>Class</td>
+				<td class="code">.class</td>
+				<td>Selects by class attribute and can be combined with an element selector. Classes can be applied to more than one element.</td>
+			</tr>
+			<tr>
+				<td>Universal</td>
+				<td class="code">*</td>
+				<td>Selects everything.</td>
+			</tr>
+			<tr>
+				<td>Grouping</td>
+				<td class="code">h1, h2, p</td>
+				<td>Elements that share CSS style rules can be grouped together into one rule set.</td>
+			</tr>
+		</tbody>
+	</table>
 
 </body>
 </html>
