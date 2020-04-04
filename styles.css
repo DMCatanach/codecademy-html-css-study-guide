@@ -6,21 +6,41 @@
 
 body {
 	font-family: Verdana;
-	text-align: center;
+	text-align: left;
 	display: block;
+	padding: 3%;
+	background-color: WhiteSmoke;
 }
 
 h1 {
-	color: purple;
+	color: Indigo;
+	text-align: center;
 }
 
-/*Currently, the text is all center-aligned, so the text in the "Description" column is as well; change that when styling.*/ 
+h2 {
+	padding-top: 2%;
+	padding-left: 2%;
+	color: DarkSlateBlue;
+}
+
 table {
 	margin: 0 auto;
+	/*border: 1px solid black;*/
+	width: 85%;
+}
+
+th {
+	background-color: LightSlateGray;
+}
+
+td {
+	border-bottom: 1px solid LightSlateGray;
+	text-align: left;
 }
 
 .code {
 	font-family: "Courier New";
 	color: aqua;
-	background-color: black;
+	background-color: DarkSlateGray;
+	text-align: center;
 }
